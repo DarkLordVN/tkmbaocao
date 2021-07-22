@@ -1,0 +1,148 @@
+Máy chủ sysman (GUI + DB) TN
+  10.184.230.4 = gsanm.tayninh.gov.vn
+  Postgresql 12, cổng 5432/tcp
+    User: baocao/AK*@15HKLM57##
+    Db: zabbix
+  GUI: http://gsanm.tayninh.gov.vn
+    User: baocao/Dungchobaocao@123
+===========================================================
+Máy chủ KTNN
+103.237.61.251
+tkm / khtdP*83
+TK kết nối csdl
+baocao/NGam*@TIa1JQK1288#@
+IP: 10.62.193.33
+
+GUI gsm.sav.gov.vn
+Tk: baocao
+Mk: Dungchobaocao@123
+---------------Moi
+VPN
++ user: tkm
++ mk: mnIJPmmy
+
+
+Máy chủ sysman (GUI + DB)
+  10.62.193.33 = gsm.sav.gov.vn
+  Postgresql 12, cổng 5432/tcp
+    User: baocao/NGam*@TIa1JQK1288#@
+    Db: zabbix
+  GUI: http://gsm.sav.gov.vn
+    User: baocao/Dungchobaocao@123
+	
+	
+===========================================================
+Server TKM
+123456Abc
+Anydesk tkm-sv1@ad / tkm@2021
+
+
+
+
+giai phap siem
+
+https://1drv.ms/u/s!ArCh3jwahFf7httvucVGZY5L1PFVcA?e=hTzJXv
+Maubaocao
+----------------------------------------------------------
+CPU: thì e cứ lấy cpu util (5 min average) (%)
+net.if.in là băng thông in
+net.if.out là băng thông out
+
+
+==============================TEMPLATE
+qaz123!@#
+
+Admin /zabbix
+
+
+/etc/zabbix/zabbix_server.conf
+DB: 
+zabbix
+Passw0rdQuantriDB@123
+
+command
+
+--Chay de ve root command
+su -
+--Chay de vao postgres
+sudo su - postgres
+--Run sql cua schema zabbix
+psql -d zabbix
+--List all table
+\dt
+
+
+https://mdungblog.wordpress.com/2018/08/27/huong-dan-cai-dat-zabbix-step-by-step/
+
+https://www.postgresqltutorial.com/psql-commands/
+
+https://openplanning.net/12255/cau-hinh-postgresql-cho-phep-cac-ket-noi-tu-xa
+sudo nano postgresql.conf
+listen_addresses = '*'
+
+
+https://vn-tek.com/cau-hinh-cho-phep-truy-cap-tu-xa-vao-csdl-postgresql-server/
+sudo -u postgres psql
+show config_file;
+
+Để cho phép truy cập từ xa trước tiên, chúng ta cần thay đổi cài đặt list_addresses trong file postgresql.conf
+Tìm dòng
+#listen_addresses = 'localhost'
+và thay đổi nó thành
+list_addresses = '*'
+
+Tiếo theo ta mở file pg_hba.conf tìm dòng
+host all all 127.0.0.1/32 md5
+và thêm vào bên dưới
+host all all 0.0.0.0/0 md5
+
+Khởi động lại Postgresql để thay đổi có hiệu lực bằng cặp lệnh
+sudo service postgresql stop
+sudo service postgresql start
+
+ALTER USER postgres WITH PASSWORD 'postgres';
+
+
+
+https://vinasupport.com/postgresql-xoa-drop-database/
+SELECT pg_terminate_backend (pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'zabbix';
+
+-- Database: zabbix
+
+-- DROP DATABASE zabbix;
+
+CREATE DATABASE zabbix
+    WITH 
+    OWNER = zabbix
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.UTF-8'
+    LC_CTYPE = 'en_US.UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+GRANT ALL ON DATABASE zabbix TO zabbix;
+
+GRANT TEMPORARY ON DATABASE zabbix TO PUBLIC;
+
+
+psql zabbix < filename
+
+
+
+----------------------------------DB migrate: Dung esf và filter + insert dần
+
+itemid < 31000
+itemid >= 31000 AND itemid < 31500
+itemid >= 31500 AND itemid < 31800
+itemid >= 31800 AND itemid < 33000
+itemid >= 33000 AND itemid < 33700
+itemid >= 33700 AND itemid < 34300
+itemid >= 34300 AND itemid < 35000
+itemid >= 35000 AND itemid < 36000
+itemid >= 36000 AND itemid < 37000
+itemid >= 37000 AND itemid < 38000
+itemid >= 38000 AND itemid < 39000
+itemid >= 39000
+

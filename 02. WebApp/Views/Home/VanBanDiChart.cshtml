@@ -1,0 +1,79 @@
+﻿@using System.Data
+@{
+    Layout = null;
+    var tableCV = (DataTable)ViewBag.tableCV;
+    var dataChart = (string)ViewBag.dataChart;
+    var arrdataChart = dataChart.Split('|');
+    var chovaoso = Convert.ToDouble(arrdataChart[0]);
+    var daphathanh = Convert.ToDouble(arrdataChart[1]);
+}
+<div class="card card-cascade narrower">
+
+    <!-- Card image -->
+    <div class="view view-cascade gradient-card-header f-bg1">
+        <h5 class="mb-0 text-uppercase"><i class="fal fa-file-export mr-3"></i>Văn bản đi</h5>
+    </div>
+    <!-- Card image -->
+    <!-- Card content -->
+    <div class="card-body card-body-cascade justify-content-center">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div id="chartVBD"></div>
+            </div>
+            <div class="col-12 col-lg-6">
+               
+                <ul class="list-group list-group-flush pt-4">
+                    <li class="list-group-item text-uppercase py-2 teal lighten-5" style="color: #2BBBAD; border-left: 3px solid #2BBBAD;"><i class="fal fa-file mr-2"></i>Văn bản chờ vào sổ</li>
+                    @if (tableCV != null && tableCV.Rows.Count > 0)
+                    {
+                        for (int i = 0; i < tableCV.Rows.Count; i++)
+                        {
+                            <li class="list-group-item px-0 border-top-0" title="@(tableCV.Rows[i]["TrichYeu"])"><a class="text-truncate d-block" href="/VanBanDi/Detail/@tableCV.Rows[i]["ID"]?q=chovaoso">@(tableCV.Rows[i]["TrichYeu"])</a></li>
+                        }
+                        <li class="list-group-item px-0"><a href="/VanBanDi/ChoVaoSo">Xem thêm <i class="fal fa-angle-double-right"></i></a></li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item px-0 border-top-0" title="Không có thông báo mới...">Không có dữ liệu...</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Card content -->
+
+</div>
+
+<script>
+    var options = {
+        chart: {
+            width: 320,
+            height: 300,
+            type: 'pie',
+        },
+        legend: {
+            position: 'bottom'
+        },
+        labels: ['VB đã gửi', 'Chờ vào sổ'],
+        colors: ['#00c851', '#2BBBAD'],
+        series: [@daphathanh,@chovaoso],
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#chartVBD"),
+        options
+    );
+
+    chart.render();
+</script>

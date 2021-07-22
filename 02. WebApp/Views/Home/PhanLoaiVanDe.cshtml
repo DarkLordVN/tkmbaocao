@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+    var time_delay = "";
+    var i = 0;
+    var typeUser = (string)ViewBag.typeUser;
+    var lstData = (List<string>)ViewBag.lstData;
+}
+<!-- Card -->
+<div class="card card-cascade narrower">
+
+    <!-- Card image -->
+    <div class="view view-cascade gradient-card-header f-bg1">
+        <h5 class="mb-0 text-uppercase"><i class="fal fa-file-import mr-3"></i>Phân loại vấn đề</h5>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+        <div class="row">
+            @foreach (var item in lstData)
+            {
+                var arrItem = item.Split(new string[] { "[--]" }, StringSplitOptions.None);
+                ++i;
+                switch (i)
+                {
+                    case 1:
+                        time_delay = "0.2s";
+                        break;
+                    case 2:
+                        time_delay = "0.4s";
+                        break;
+                    case 3:
+                        time_delay = "0.6s";
+                        break;
+                    case 4:
+                        time_delay = "0.8s";
+                        break;
+                    default:
+                        time_delay = "0.0s";
+                        break;
+                }
+                 <!-- Grid column -->
+                <div class="col-12 col-lg-6 mb-4 wow fadeInUp" data-wow-delay="@time_delay">
+                    <!-- Card -->
+                    <div class="card card-cascade cascading-admin-card">
+
+                        <!-- Card Data -->
+                        @*<a href="@arrItem[3]">*@
+
+                        <a href="/BaoCao/ChiTietVanDe">
+                            <div class="admin-up">
+                                <i class="fal @arrItem[0] mr-3 z-depth-2"></i>
+                                <div class="data">
+                                    <p class="text-uppercase">@arrItem[2]</p>
+                                    <h4 class="font-weight-bold dark-grey-text">@arrItem[1]</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card -->
+                </div>
+            <!-- Grid column -->
+            }
+
+        </div>
+        <!-- Grid row -->
+    </div>
+
+</div>
+<!-- Card -->

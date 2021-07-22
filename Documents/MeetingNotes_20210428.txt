@@ -1,0 +1,57 @@
+ForFiles /p "D:\TKM_Sysman_Reports\02.%20WebApp\TempFile" /s /d -30 /c "cmd /c del /q @file"
+D:\TKM_Sysman_Reports\Documents\HTML
+ForFiles /p "D:\TKM_Sysman_Reports\Documents\HTML" /s /d -30 /c "cmd /c del /q @file"
+del /q "C:\Temp\*"
+
+System.Configuration.ConfigurationManager.AppSettings["StorePathDir"]
+https://www.freeformatter.com/xml-escape.html#ad-output
+
+thecoffeehouse
+--------------Start with windows: Tinh nang them, khi mở windows sẽ hiển thị ra popup
+chrome: ... => more tools => Create shortcut
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+---Trang bìa thêm  
++ Hệ thống được cung cấp bởi Công ty cổ phần công nghệ TKM Việt Nam
++ Báo cáo được lấy từ hệ thống .... (tham số)
++ Mã số xxxxx
+-------File cấu hình
++ Tên chủ đầu tư
++ Mã khách hàng
++ Mã sản phẩm
+---------------Tự động
++ Tên người in báo cáo (phân quyền)
+Ngày giờ xuất báo cáo
++ Tên báo cáo (Fix cứng)
+
+Có trang ký 
++ Người duyệt |||||||| + Người xuất báo cáo
+
+
+======================
+
+
+Thời gian thực hiện
++ Demo: Thứ 3, 4/5 
++ Ngày 15/05 sẽ cho sử dụng thực tế hoặc sớm hơn
+
+- Server để khách hàng test
+	=> Server TKM 
+	=> Server chạy thật trên hệ thống Tây Ninh
+	
+- Đào tạo: 
+	+ Hướng dẫn cài đặt hệ thống
+		=> Tạo bản ghost, cấu hình full các chức năng để làm bản cài chạy chính
+	+ Hướng dẫn sử dụng
+
+
+	<h5>Hệ thống được cung cấp bởi <b>CÔNG TY CỔ PHẦN CÔNG NGHỆ TKM VIỆT NAM</b></h5>
+
+
+itemid < 200000
+
+
+
+
+
+

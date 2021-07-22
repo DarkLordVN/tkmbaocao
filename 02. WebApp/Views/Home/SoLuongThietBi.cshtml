@@ -1,0 +1,51 @@
+﻿
+@model TKM.BLL.BaoCaoTongHopListView
+@{
+    Layout = null;
+}
+<div class="card card-cascade narrower">
+    <input type="hidden" id="txtChuaXuLy" value="@Model.TongThietBiLoi" />
+    <input type="hidden" id="txtDaXuLy" value="@Model.TongThietBi" />
+    <input type="hidden" id="txtGroupName" value="@Model.LstGroup" />
+    <!-- Card image -->
+    <div class="view view-cascade gradient-card-header f-bg1">
+        <h5 class="mb-0 text-uppercase"><i class="fal fa-chart-bar mr-3"></i>Số lượng thiết bị</h5>
+    </div>
+    <!-- Card image -->
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center">
+
+        <div id="chart"></div>
+
+    </div>
+    <!-- Card content -->
+
+</div>
+
+<script>
+        var options = {
+            series: [{
+                name: 'Tổng số lượng thiết bị',
+                type: 'column',
+                data: $("#txtDaXuLy").val().split(',').map(Number)
+            }, {
+                name: 'Thiết bị gặp vấn đề',
+                type: 'line',
+                data: $("#txtChuaXuLy").val().split(',').map(Number)
+            }],
+            chart: {
+                height: 350,
+                type: 'line',
+            },
+            stroke: {
+                width: [0, 4]
+            },
+            dataLabels: {
+                enabled: true
+            },
+            labels: $("#txtGroupName").val().split(',').map(String)
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+</script>

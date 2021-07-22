@@ -1,0 +1,53 @@
+=> Nhóm thiết bị
+	x+ chart cột tổng thiết bị quản lý theo nhóm (stacked - sl ok và sl problem) mix chart: tổng thiết bị và line số lượng có vấn đề
+	x+ chart tổng vấn đề nhóm thiết bị theo cấp (stacked - đã xử lý/chưa xử lý) 
+	x+ Danh sách chi tiết thiết bị theo nhóm thiết bị
+	+ Báo cáo hiệu năng (check all thiết bị trong nhóm) 
+		- CPU
+		- RAM
+		- Ổ cứng
+		- Băng thông
+	+ So sánh hiệu năng nhóm thiết bị theo tháng/quý/năm (line chart)
+=> Thiết bị
+	+ Tổng thiết bị quản lý (column chart - Số lượng thành phần quản lý/item thiết bị/triggers)
+	+ Tổng hợp vấn đề của hệ thống theo cấp độ của thiết bị (stacked - đã xử lý/chưa xử lý)
+	+ Tổng hợp số lỗi chưa fix theo tháng/quý/năm
+	+ Tổng hợp số lỗi đã fix theo tháng/quý/năm
+	+ Báo cáo hiệu năng thiết bị (bar chart) 
+		- CPU
+		- RAM
+		- Ổ cứng
+		- Băng thông
+	+ Chart hiệu năng 1 thiết bị trong khoảng thời gian (area)
+	+ So sánh hiệu năng thiết bị theo tháng/quý/năm
+=> Vấn đề
+	+ Chart tổng vấn đề theo vấn đề & cấp độ 
+	+ Thống kê chi tiết số lượng vấn đề đã xử lý
+	+ Thống kê chi tiết số lượng vấn đề chưa giải quyết
+	+ Số lượng vấn đề theo thời gian
+	
+I. Nhóm thiết bị
+1. Tổng thiết bị giám sát theo nhóm 
+2. Tổng vấn đề của nhóm thiết bị 
+3. Danh sách thiết bị giám sát
+4. Báo cáo hiệu năng theo nhóm thiết bị/server
+	a. Hiệu năng sử dụng CPU (theo ngày/tuần/tháng/quý/năm)
+	b. Hiệu năng theo RAM (theo ngày/tuần/tháng/quý/năm)
+	c. Hiệu năng theo ổ cứng (theo ngày/tuần/tháng/quý/năm)
+	d. Băng thông (theo ngày/tuần/tháng/quý/năm)
+		+ Băng thông đường truyền vào
+		+ Băng thông đường truyền ra
+II. Thiết bị
+1. Tổng hợp vấn đề theo cấp độ (đã xử lý/ chưa xử lý)
+2. Chi tiết vấn đề
+3. Báo cáo hiệu năng thiết bị
+	a. Hiệu năng sử dụng CPU (theo ngày/tuần/tháng/quý/năm)
+	b. Hiệu năng theo RAM (theo ngày/tuần/tháng/quý/năm)
+	c. Hiệu năng theo ổ cứng (theo ngày/tuần/tháng/quý/năm)
+	d. Băng thông (theo ngày/tuần/tháng/quý/năm)
+		+ Băng thông đường truyền vào
+		+ Băng thông đường truyền ra
+III. Báo cáo tổng hợp
+1. Báo cáo tổng hợp (Tổng hợp các báo cáo trên)
+2. Đề xuất nâng cấp thiết bị
+

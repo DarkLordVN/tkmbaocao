@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3939/NguoiDung -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Danh sách người dùng - Báo cáo SYSMAN</title>
+
+    <!-- Latest compiled and minified CSS -->
+    
+
+    <!-- Font Awesome -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/select2.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/mdb.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/datatables.min.css" rel="stylesheet">
+    <!-- Apexcharts -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/apexcharts.css" rel="stylesheet">
+    <!--Custom-->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/custom.css" rel="stylesheet">
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/print.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/style.css" rel="stylesheet">
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/loadingcustom.css" rel="stylesheet">
+    <link href="./Danh sách người dùng - Báo cáo SYSMAN_files/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/jquery-3.4.0.min.js.download"></script>
+
+    
+    <!--Reference the SignalR library. -->
+    <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/jquery.signalR-2.4.1.min.js.download"></script>
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/hubs"></script>
+
+
+    <style></style>
+    <style>
+        #navbarDropdownMenuLink, #nav h4, h5, h6 {
+            color: #fff;
+        }
+
+        .f-hov1:hover {
+            filter: brightness(110%);
+        }
+    </style>
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.apexcharts-canvas.dark {
+  background: #343F57;
+}
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-gridline, .apexcharts-text {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+.apexcharts-tooltip.light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+.apexcharts-tooltip.dark {
+  color: #fff;
+  background: rgba(30,30,30, 0.8);
+}
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line {
+  pointer-events: none;
+}
+
+.apexcharts-tooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.apexcharts-tooltip.light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+.apexcharts-tooltip.dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-z-label:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-value, 
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+.apexcharts-tooltip-series-group.active, .apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+.apexcharts-tooltip-candlestick {
+  padding: 4px 8px;
+}
+.apexcharts-tooltip-candlestick > div {
+  margin: 4px 0;
+}
+.apexcharts-tooltip-candlestick span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+	background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after, .apexcharts-xaxistooltip:before {
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+	border-color: rgba(236, 239, 241, 0);
+	border-width: 6px;
+	margin-left: -6px;
+}
+.apexcharts-xaxistooltip:before {
+	border-color: rgba(144, 164, 174, 0);
+	border-width: 7px;
+	margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after, .apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after, .apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-bottom.dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color:#ECEFF1
+}
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+.apexcharts-xaxistooltip-top.dark:after {
+  border-top-color:rgba(0, 0, 0, 0.5);
+}
+.apexcharts-xaxistooltip-top.dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.apexcharts-xaxistooltip.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+	background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after, .apexcharts-yaxistooltip:before {
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.apexcharts-yaxistooltip:after {
+	border-color: rgba(236, 239, 241, 0);
+	border-width: 6px;
+	margin-top: -6px;
+}
+.apexcharts-yaxistooltip:before {
+	border-color: rgba(144, 164, 174, 0);
+	border-width: 7px;
+	margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after, .apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after, .apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-left.dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-left.dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+.apexcharts-yaxistooltip-right.dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+.apexcharts-yaxistooltip-right.dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.active {
+  opacity: 1;
+}
+
+.apexcharts-xcrosshairs, .apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.active, .apexcharts-ycrosshairs.active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-zoom-rect {
+  pointer-events: none;
+}
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_points, .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+.svg_select_points_l, .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+  fill: #888;
+}
+.apexcharts-canvas.zoomable .hovering-zoom {
+  cursor: crosshair
+}
+.apexcharts-canvas.zoomable .hovering-pan {
+  cursor: move
+}
+
+.apexcharts-xaxis,
+.apexcharts-yaxis {
+  pointer-events: none;
+}
+
+.apexcharts-zoom-icon, 
+.apexcharts-zoom-in-icon,
+.apexcharts-zoom-out-icon,
+.apexcharts-reset-zoom-icon, 
+.apexcharts-pan-icon, 
+.apexcharts-selection-icon,
+.apexcharts-menu-icon, 
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+
+.apexcharts-zoom-icon svg, 
+.apexcharts-zoom-in-icon svg,
+.apexcharts-zoom-out-icon svg,
+.apexcharts-reset-zoom-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.dark .apexcharts-zoom-icon svg, 
+.dark .apexcharts-zoom-in-icon svg,
+.dark .apexcharts-zoom-out-icon svg,
+.dark .apexcharts-reset-zoom-icon svg, 
+.dark .apexcharts-pan-icon svg, 
+.dark .apexcharts-selection-icon svg,
+.dark .apexcharts-menu-icon svg, 
+.dark .apexcharts-toolbar-custom-icon svg{
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.selected svg, 
+.apexcharts-canvas .apexcharts-selection-icon.selected svg, 
+.apexcharts-canvas .apexcharts-reset-zoom-icon.selected svg {
+  fill: #008FFB;
+}
+.light .apexcharts-selection-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-icon:not(.selected):hover svg, 
+.light .apexcharts-zoom-in-icon:hover svg, 
+.light .apexcharts-zoom-out-icon:hover svg, 
+.light .apexcharts-reset-zoom-icon:hover svg, 
+.light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon, .apexcharts-menu-icon {
+  position: relative;
+}
+.apexcharts-reset-zoom-icon {
+  margin-left: 5px;
+}
+.apexcharts-zoom-icon, .apexcharts-reset-zoom-icon, .apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoom-in-icon, .apexcharts-zoom-out-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoom-out-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+.apexcharts-pan-icon.selected svg {
+  stroke: #008FFB;
+}
+.apexcharts-pan-icon:not(.selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  top: 0px;
+  right: 3px;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.apexcharts-toolbar svg {
+  pointer-events: none;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+.dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-toolbar {
+    /*opacity: 0;*/
+  }
+
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  } 
+}
+
+.apexcharts-datalabel.hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabel, .apexcharts-datalabel-label, .apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events, .apexcharts-radar-series path, .apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}</style><style type="text/css" data-styled-components="FiaaB gTcftA caPIRE" data-styled-components-is-local="true">
+/* sc-component-id: sc-keyframes-FiaaB */
+@-webkit-keyframes FiaaB{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes FiaaB{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}
+/* sc-component-id: sc-keyframes-gTcftA */
+@-webkit-keyframes gTcftA{10%,90%{-webkit-transform:translate3d(-1px,0,0);-ms-transform:translate3d(-1px,0,0);transform:translate3d(-1px,0,0);}20%,80%{-webkit-transform:translate3d(2px,0,0);-ms-transform:translate3d(2px,0,0);transform:translate3d(2px,0,0);}30%,50%,70%{-webkit-transform:translate3d(-4px,0,0);-ms-transform:translate3d(-4px,0,0);transform:translate3d(-4px,0,0);}40%,60%{-webkit-transform:translate3d(4px,0,0);-ms-transform:translate3d(4px,0,0);transform:translate3d(4px,0,0);}}@keyframes gTcftA{10%,90%{-webkit-transform:translate3d(-1px,0,0);-ms-transform:translate3d(-1px,0,0);transform:translate3d(-1px,0,0);}20%,80%{-webkit-transform:translate3d(2px,0,0);-ms-transform:translate3d(2px,0,0);transform:translate3d(2px,0,0);}30%,50%,70%{-webkit-transform:translate3d(-4px,0,0);-ms-transform:translate3d(-4px,0,0);transform:translate3d(-4px,0,0);}40%,60%{-webkit-transform:translate3d(4px,0,0);-ms-transform:translate3d(4px,0,0);transform:translate3d(4px,0,0);}}
+/* sc-component-id: sc-keyframes-caPIRE */
+@-webkit-keyframes caPIRE{0%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}20%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}40%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}60%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}80%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}100%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}}@keyframes caPIRE{0%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}20%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}40%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}60%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}80%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}100%{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);}}</style><style>
+      .glot-sub-active{
+        color: #1296ba !important;
+      }
+      
+      .glot-sub-hovered{
+        color: #1296ba !important;
+      }
+      .glot-sub-clzz{
+        cursor: pointer;
+      }
+      .glot-sub-clzz:hover{
+        color: #1296ba !important;
+      }
+      </style></head>
+<body class="fixed-sn" aria-busy="true">
+
+    <!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav fixed wide" style="background-image: url(&quot;/Assets/images/sidenav.jpg&quot;); transform: translateX(0%);">
+            <ul class="custom-scrollbar" style="overflow-x: auto">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper bg-white text-center">
+                        <a href="http://localhost:3939/"><img src="./Danh sách người dùng - Báo cáo SYSMAN_files/tkm-logo.png" style="max-height: 84px" class="img-fluid"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form d-block d-lg-none" role="search">
+                        <div class="form-group md-form my-0 waves-light waves-effect waves-light">
+                            <input type="text" class="form-control py-3 px-3" placeholder="Tìm kiếm">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion mt-0">
+                        
+                        
+                        <li class="active">
+                            <a class="collapsible-header waves-effect arrow-r active"><i class="fal fa-book-open mr-2"></i>Tổng hợp thiết bị<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body" style="display: block;">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Số lượng theo nhóm</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Số lượng thành phần quản lý</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-book mr-2"></i>Báo cáo hiệu năng thiết bị<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo CPU</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo RAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo ổ cứng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-chart-line mr-2"></i>Tổng hợp vấn đề<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Báo cáo tổng quát</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Thống kê</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-chart-bar mr-2"></i>Thống kê số lượng vấn đề theo nhóm thiết bị</a>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-chalkboard mr-2"></i>Tình hình sử dụng băng thông</a>
+                        </li>
+
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-chart-area mr-2"></i>Báo cáo hiệu năng máy chủ<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo CPU</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo RAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo ổ cứng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-chart-pie mr-2"></i>Báo cáo tổng hợp<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo tháng</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo quý</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tổng hợp theo năm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-clipboard mr-2"></i>Danh mục<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Danh mục chức năng</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Nhóm người dùng</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Người dùng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fal fa-cogs mr-2"></i>Quản trị<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Tham số hệ thống</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:3939/NguoiDung#" class="waves-effect">Nhật ký hệ thống</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg rgba-blue-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav bg-white">
+             
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="http://localhost:3939/NguoiDung#" data-activates="slide-out" class="button-collapse text-uppercase"><i class="fal fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <ul id="nav" class="navbar-nav pl-lg-3 d-none d-lg-inline-block col-9 text-center">
+                <li class="nav-item text-uppercase f-cl1">
+                    <h6 class="text-uppercase font-weight-bold f-tnr fs22 c347cc7">Báo cáo tổng hợp SYSMAN</h6>
+                    
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-lg-auto col-5">
+
+                
+
+                
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle f-hov1 c347cc7 waves-effect waves-light" href="http://localhost:3939/NguoiDung#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./Danh sách người dùng - Báo cáo SYSMAN_files/signin.png" alt="" class="rounded-circle z-depth-0" height="35"><span class="clearfix d-none d-sm-inline-block ml-2" quản="" trị="" hệ="" thống=""> Quản trị hệ thống</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item waves-effect waves-light" href="http://localhost:3939/NguoiDung/UpdateInfor"><i class="fal fa-cogs mr-2"></i>Hồ sơ cá nhân</a>
+                            <a class="dropdown-item waves-effect waves-light" href="http://localhost:3939/NguoiDung/ChangePassword"><i class="fal fa-lock-alt mr-2"></i>Đổi mật khẩu</a>
+                            <a class="dropdown-item waves-effect waves-light" href="http://localhost:3939/Guide/HTML/index.html"><i class="fal fa-lock-alt mr-2"></i>Hướng dẫn sử dụng</a>
+                            <a class="dropdown-item waves-effect waves-light" href="http://localhost:3939/Authentication/DoLogout"><i class="fal fa-sign-out mr-2"></i>Đăng xuất</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- /.Navbar -->
+        </header>
+        <main>
+            <div class="container-fluid pb-3 pt-2">
+                
+                
+
+<div class="row">
+    <div class="col right-content">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 fwb">
+                        <li class="breadcrumb-item"><a href="http://localhost:3939/Home"><i class="fas fa-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="http://localhost:3939/NguoiDung/Index">Tổng hợp số lượng thiết bị theo nhóm</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- Classic tabs -->
+                <div class="classic-tabs tabs-f-cl mx-2">
+                    <div class="tab-content py-0 card" id="myClassicTabContentShadow">
+                        <div class="tab-pane fade active show" id="vb-lt-den" role="tabpanel" aria-labelledby="profile-tab-classic-shadow">
+                            <div class="row grey lighten-4">
+                                <div class="col p-3">
+                                    
+                                    
+                                    <!-- Chức năng thêm và xóa -->
+                                    
+                                    <div style="clear:both;"></div>
+                                    <!-- Collapsible element -->
+                                    <div class="collapse show" id="collapseExample" style="">
+
+                                        <div class="form-group row">
+                                            <label for="txtHoVaTen" class="col-sm-2 col-form-label">Tên thiết bị</label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control keyenter" id="txtHoVaTen" name="HoVaTen" type="text" value="">
+                                            </div>
+                                            <label for="ddlDonVi" class="col-sm-2 col-form-label">Nhóm thiết bị</label>
+                                            <div class="col-sm-4">
+                                                <div class="select-wrapper mdb-select md-form md-outline colorful-select dropdown-primary m-0 p-0 keyenter"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-18659126-9a88-41a7-b220-684544a97385" value=""><ul id="select-options-18659126-9a88-41a7-b220-684544a97385" class="dropdown-content select-dropdown w-100" style="width: 379.725px; position: absolute; top: 0px; left: 0px; opacity: 1; display: none;"><span class="search-wrap ml-2"><div class="md-form mt-0"><input type="text" class="search form-control w-100 d-block" placeholder="Nhập từ khóa.."></div></span><li class="active"><span class="filtrable">    </span></li></ul><select class="mdb-select md-form md-outline colorful-select dropdown-primary m-0 p-0 keyenter initialized" data-val="true" data-val-number="The field DonViID must be a number." id="ddlDonVi" name="DonViID" searchable="Nhập từ khóa.."><option value="0"></option>
+</select></div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="form-group row">
+                                            <label for="txtHoVaTen" class="col-sm-2 col-form-label">Từ ngày</label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control keyenter" id="txtHoVaTen" name="HoVaTen" type="text" value="">
+                                            </div>
+                                            <label for="ddlDonVi" class="col-sm-2 col-form-label">Đến ngày</label>
+                                            <div class="col-sm-4"><input class="form-control keyenter" id="txtHoVaTen" name="HoVaTen" type="text" value=""></div>
+                                        </div><div class="col text-center text-lg-right">
+                                            <button id="btnSearch" class="btn text-white f-bg1 waves-effect waves-light" type="button">Tìm kiếm</button>
+                                        </div>
+
+
+                                        
+                                    </div>
+                                    <!-- / Collapsible element -->
+                                </div>
+                            </div>
+                            <!-- table -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="javascript://" onclick="InBrowserNguoiDung()" class="btn-floating btn-sm btn-info mx-1 waves-effect waves-light" data-toggle="tooltip" title="" data-original-title="In Browser"><i class="fal fa-print"></i></a>
+                                    <a href="http://localhost:3939/NguoiDung/ExportWord" class="btn-floating btn-sm btn-primary mx-1 waves-effect waves-light" data-toggle="tooltip" data-original-title="Xuất Word" title=""><i class="fal fa-file-word"></i></a>
+                                    <a href="http://localhost:3939/NguoiDung/ExportExcel" class="btn-floating btn-sm btn-success mx-1 waves-effect waves-light" data-toggle="tooltip" title="" data-original-title="Xuất Excel"><i class="fal fa-file-excel"></i></a>
+                                    
+                                </div>
+                            </div>
+                            <div class="row" id="table-print">
+                                <div class="col-12">
+                                    <div class="table-responsive-sm">
+                                        <table id="dt-vblt-den" class="table table-hover table-bordered dataTable no-footer" cellspacing="0" width="100%">
+                                            <thead class="grey lighten-3">
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th class="pointer" data-colname="TenDangNhap" data-orderby="asc">Tên thiết bị  <span class="dn-browser"><i class="fas fa-sort"></i></span></th>
+                                                    <th class="pointer" data-colname="HoVaTen" data-orderby="asc">IP   <span class="dn-browser"><i class="fas fa-sort"></i></span></th>
+                                                    <th class="dn-browser">Tên item</th>
+                                                    <th>CPU Nhỏ nhất (%)</th>
+<th>CPU Trung bình (%)</th>
+<th>CPU Lớn nhất (%)</th>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbKetQua">
+   <input type="hidden" id="txtTotal" value="0">
+   <input type="hidden" id="txtPageNumber" value="1">
+   <tr>
+      <td>1</td>
+      <td>GSM</td>
+      <td>127.0.0.1</td>
+      <td>CPU idle time</td>
+      <td>19.57</td>
+      <td>96</td>
+      <td>99</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>Sophos-SG-450-10.184.254.4</td>
+      <td>10.184.254.4</td>
+      <td>CPU iowait time</td>
+      <td>28</td>
+      <td>18</td>
+      <td>90</td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td>GSM</td>
+      <td>127.0.0.1</td>
+      <td>CPU utilization</td>
+      <td>30</td>
+      <td>30</td>
+      <td>770</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td>GSM</td>
+      <td>127.0.0.1</td>
+      <td>CPU user time</td>
+      <td>66</td>
+      <td>50</td>
+      <td>69</td>
+   </tr>
+   <tr>
+      <td>5</td>
+      <td>Centos7-10.184.250.16</td>
+      <td>10.184.254.4</td>
+      <td>CPU iowait time</td>
+      <td>18</td>
+      <td>69</td>
+      <td>80</td>
+   </tr>
+   <tr>
+      <td>6</td>
+      <td>Centos7-10.184.250.16</td>
+      <td>10.184.254.4</td>
+      <td>CPU system time</td>
+      <td>19</td>
+      <td>50</td>
+      <td>96</td>
+   </tr>
+</tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+
+
+                <hr>
+                <footer class="pl-0">
+                    
+                    <p class="pb-0 mb-0 c000"><b>2021 © </b><a href="https://tkmgroup.com.vn/" target="_blank" class="text-primary h-tdu fwb" title="CÔNG TY CỔ PHẦN CÔNG NGHỆ TKM VIỆT NAM">TKM JSC</a></p>
+                    <p class="pb-0 mb-0 c000"><b>Địa chỉ giao dịch: </b>số 28 , lô 14, Trung Yên 11, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </footer>
+            </div>
+        </main>
+        <div class="modal fade" id="mymodal" tabindex="-1" backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+
+        <div class="modal fade" id="responsive" backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+        <!--Loading-->
+        <div id="loading" style="display: none;">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <span class="fwb">Đang tải dữ liệu...</span>
+                    <div class="cssload-box-loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery library -->
+        <!-- Popper JS -->
+        
+
+        <!-- Latest compiled JavaScript -->
+        
+
+        
+        <button style="display:none" class="addNotification" type="button"></button>
+        <input type="hidden" name="lstidThongBao" id="lstidThongBao" value="">
+        <input type="hidden" name="currUserID" id="currUserID" value="0">
+        <input type="hidden" name="pageIndexLoad" id="pageIndexLoad" value="1">
+        <input type="hidden" name="totalItemLoad" id="totalItemLoad" value="0">
+        <input type="hidden" name="lstidDaNhanMoiNhat" id="lstidDaNhanMoiNhat" value="">
+
+        <!-- SCRIPTS -->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/popper.min.js.download"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/bootstrap.min.js.download"></script>
+        <!-- Select2 JavaScript -->
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/select2.min.js.download"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/mdb.min.js.download"></script><div class="hiddendiv common"></div>
+        <!-- MDBootstrap Datatables  -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/datatables.min.js.download"></script>
+
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/jquery.unobtrusive-ajax.min.js.download"></script>
+
+        <!-- Apexcharts JavaScript -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/apexcharts.min.js.download"></script>
+        
+        
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/moment.js.download"></script>
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/bootstrap-datetimepicker.min.js.download"></script>
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/readmore.min.js.download"></script>
+
+        <!-- Custom core JavaScript -->
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/custom.js.download"></script><div class="drag-target" style="left: 0px;"></div>
+        <script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/common.js.download"></script>
+        
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/sweetalert.min.js.download"></script>
+
+        <script src="./Danh sách người dùng - Báo cáo SYSMAN_files/thongbao.js.download"></script>
+        <script>
+            $(document).ready(function () {
+                var thongbaoid = '';
+                if (thongbaoid != '') {
+                    $('#lstidThongBao').val(thongbaoid);
+                    $('.addNotificationRight').click();
+                    $('.addNotification').click();
+                }
+                ////notificationRight($('#currUserID').val());
+                //notification($('#currUserID').val());
+                ////LoadDataNotificationRight();
+                ////LoadDataLichLamViec();
+                //$("#navbarDropdownMenuLink").click(function () {
+                //    UpdateFillNewestNotification();
+                //    LoadDataNotification();
+                //    //LoadDataNotificationRight();
+                //    $("#notificationContainer").fadeToggle(300);
+                //    $("#notification_count").fadeOut("slow");
+                //    $("#notification_count").text('');
+                //    $('#lstidDaNhanMoiNhat').val('');
+                //    //$("#notification_count_new").text('0');
+                //    return false;
+                //});
+                ////Document Click hiding the popup
+                //$(document).click(function () {
+                //    $("#notificationContainer").hide();
+                //});
+                ////$("ul.collapsible.collapsible-accordion.mt-0 a").click(function () {
+                ////    //collapsible-header waves-effect arrow-r active
+                ////    if ($(this).hasClass("active")) {
+                ////        $(this).find("div.collapsible-body").hide();
+                ////        //$(this).find("div.collapsible-body").eq($(this).index()).hide();
+                ////        $(this).removeClass("active");
+                ////    }
+                ////    else {
+                ////        $(this).find("div.collapsible-body").show();
+                ////        //$(this).find("div.collapsible-body").eq($(this).index()).show();
+                ////        $(this).addClass("active");
+                ////    }
+                ////    //alert($("ul.collapsible.collapsible-accordion.mt-0").index(this));
+                ////});
+                //////Popup on click
+                ////$("#notificationContainer").click(function () {
+                ////    return false;
+                ////});
+            })
+        </script>
+
+<script src="./Danh sách người dùng - Báo cáo SYSMAN_files/print.js.download"></script>
+    <script>
+        $(document).ready(function () {
+            InitClickCheckAllInTable("chkall", function (res) {
+                $("#hdfID").val(res);
+            });
+        });
+        
+        function onChangeStatus(id) {
+            swal({
+                title: "Thay đổi trạng thái?",
+                text: "Trạng thái sẽ được thay đổi, hãy nhấn OK!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $.ajax({
+                        type: "POST",
+                        url: '/NguoiDung/onChangeStatus',
+                        data: { id: id },
+                        dataType: "html",
+                        success: function (res) {
+                            res = JSON.parse(res);
+                            if (res.isSuccess)
+                                swal("Thay đổi trạng thái thành công!", {
+                                    icon: "success",
+                                });
+                            else
+                                swal("Có lỗi xảy ra", { icon: "error", });
+                            loadData("", "");
+                        },
+                        error: function (response) {
+                            swal("Đã có lỗi xảy ra", { icon: "error", });
+                        }
+                    });
+
+                }
+            });
+        }
+        function loadfrmView(id) {
+            modal.Render("/NguoiDung/Detail/" + id, "Thông tin người dùng", "modal-lg");
+        }
+        function onSignOutUser(id) {
+            swal({
+                title: "Đăng xuất tài khoản?",
+                text: "Bạn có chắc chắn muốn đăng xuất tài khoản này khỏi hệ thống này?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+              .then((willDelete) => {
+                  if (willDelete) {
+                      $.ajax({
+                          type: "POST",
+                          url: '/NguoiDung/SignOutUser',
+                          data: { id: id },
+                          dataType: "html",
+                          success: function (res) {
+                              res = JSON.parse(res);
+                              if (res.isSuccess == 1)
+                                  swal(res.message, {
+                                      icon: "success",
+                                  });
+                              else
+                                  swal(res.message, { icon: "error", });
+                              loadData("", "");
+                          },
+                          error: function (response) {
+                              swal("Đã có lỗi xảy ra khi đăng xuất tài khoản", { icon: "error", });
+                          }
+                      });
+
+                  }
+              });
+        }
+        function onResetPasswordUser(id) {
+            swal({
+                title: "Reset mật khẩu?",
+                text: "Bạn có chắc chắn muốn reset mật khẩu tài khoản này?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+              .then((willDelete) => {
+                  if (willDelete) {
+                      $.ajax({
+                          type: "POST",
+                          url: '/NguoiDung/ResetPasswordUser',
+                          data: { id: id },
+                          dataType: "html",
+                          success: function (res) {
+                              res = JSON.parse(res);
+                              if (res.isSuccess == 1)
+                                  swal(res.message, {
+                                      icon: "success",
+                                  });
+                              else
+                                  swal(res.message, { icon: "error", });
+                              loadData("", "");
+                          },
+                          error: function (response) {
+                              swal("Đã có lỗi xảy ra khi reset mật khẩu tài khoản", { icon: "error", });
+                          }
+                      });
+
+                  }
+              });
+        }
+        function onDelete(id) {
+            swal({
+                title: "Xóa?",
+                text: "Bạn có chắc chăn muốn xóa người dùng này?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+              .then((willDelete) => {
+                  if (willDelete) {
+                      $.ajax({
+                          type: "POST",
+                          url: '/NguoiDung/Delete',
+                          data: { id: id },
+                          dataType: "html",
+                          success: function (res) {
+                              res = JSON.parse(res);
+                              if (res.isSuccess == 1)
+                                  swal("Xóa người dùng này thành công!", {
+                                      icon: "success",
+                                  });
+                              else
+                                  swal("Đã có lỗi xảy ra", { icon: "error", });
+                              loadData("", "");
+                          },
+                          error: function (response) {
+                              swal("Đã có lỗi xảy ra", { icon: "error", });
+                          }
+                      });
+
+                  }
+              });
+        }
+        function onDeleteMul() {
+
+
+            if ($("table tbody").find("input[type=checkbox]:checked").length == 0) {
+                swal("Bạn cần chọn ít nhất 1 danh mục cần xóa", { icon: "error", });
+            } else {
+                swal({
+                    title: "Xóa?",
+                    text: "Bạn có chắc chăn muốn xóa những người dùng này?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+             .then((willDelete) => {
+                 if (willDelete) {
+                     $.ajax({
+                         type: "POST",
+                         url: '/NguoiDung/DeleteMul',
+                         data: { lstid: $("#hdfID").val() },
+                         dataType: "html",
+                         success: function (res) {
+                             res = JSON.parse(res);
+                             if (res.isSuccess)
+                                 swal("Xóa thành công!", {
+                                     icon: "success",
+                                 });
+                             else
+                                 swal("Có lỗi xảy ra", {
+                                     icon: "error",
+                                 });
+                             loadData("", "");
+                         },
+                         error: function (response) {
+                             swal("Đã có lỗi xảy ra", { icon: "error", });
+                         }
+                     });
+
+                 }
+             });
+            }
+        }
+        $(".keyenter").on("keypress", function (e) {
+            if (e.which == 13) {
+                $("#btnSearch").click();
+            }
+        });
+        $(".keyenterTuKhoa").on("keypress", function (e) {
+            if (e.which == 13) {
+                $("#btnSearchTuKhoa").click();
+            }
+        });
+        function setDeleteId(id) {
+            $("#delModalId").val(id);
+        };
+
+        $("#btnDel").on("click", function () {
+            $.ajax({
+                type: "POST",
+                url: '/NguoiDung/DeleteNguoiDung',
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({ id: $("#delModalId").val() }),
+                cache: false,
+                success: function (data) {
+                    location.reload();
+                },
+                error: function (xhr) {
+                    alert('Không thành công!');
+                }
+            });
+            $(window).scrollTop(0);
+        });
+        //Thêm event xử lý load ajax
+        $("#btnSearchTuKhoa").click(function () {
+            $.ajax({
+                type: "GET",
+                url: '/NguoiDung/IndexDetail',
+                data: { TuKhoa: $("#txtTuKhoa").val(), HoVaTen: $("#txtHoVaTen").val(), ChucVuID: $("#ddlChucVuID").val(), DonViID: $("#ddlDonVi").val(), srTrangThai: $("#srTrangThai").val(), ColumnName: '', OrderBy: '', PageNumber: 1, PageSize: $("#changePageSize").val() },
+                dataType: "html",
+                success: function (response) {
+                    $("#tbKetQua").html(response);
+                    loadPaging();
+                },
+                error: function (response) {
+                    swal("Đã có lỗi xảy ra", { icon: "error", });
+                }
+            });
+        });
+        $("#btnSearch").click(function () {
+            loadData("", "");
+        });
+
+        $("table th").click(function () {
+            var col = $(this).data("colname");
+            var orderby = $(this).data("orderby");
+            if (col != "" && orderby != null) {
+                loadData(col, orderby);
+                if (orderby == "desc") orderby = "asc";
+                else orderby = "desc";
+                $(this).data("orderby", orderby);
+            }
+        });
+
+        function loadData(col, order, pnum, psize) {
+            $.ajax({
+                type: "GET",
+                url: '/NguoiDung/IndexDetail',
+                data: { TuKhoa: $("#txtTuKhoa").val(), HoVaTen: $("#txtHoVaTen").val(), ChucVuID: $("#ddlChucVuID").val(), DonViID: $("#ddlDonVi").val(), srTrangThai: $("#srTrangThai").val(), ColumnName: col, OrderBy: order, PageNumber: pnum, PageSize: $("#changePageSize").val() },
+                dataType: "html",
+                success: function (response) {
+                    $("#tbKetQua").html(response);
+                    loadPaging();
+                },
+                error: function (response) {
+                    swal("Đã có lỗi xảy ra", {icon: "error",});
+                }
+            });
+        }
+        function loadPaging() {
+            var total = Math.ceil($("#txtTotal").val() / $("#changePageSize").val());
+            var pnum = $("#txtPageNumber").val();
+            $(".PagedList-pageCountAndLocation").removeClass("disabled");
+            $(".PagedList-pageCountAndLocation").html("<a style=\"padding: 5px\"> Trang <input type=\"text\" id=\"pageNumber\" name=\"PageNunber\" value=\"" + pnum + "\" min=\"0\" style=\"width: 40px;\" onchange=\"onChangePageNunber($(this).val()," + total + ")\"> / " + total + "</a>");
+        }
+
+        //Nhảy trang
+        function onChangePageNunber(pagenumber, totalpagesize) {
+            
+            var reg = /^[0-9]+$/;
+            if (pagenumber.match(reg)) {
+                if (pagenumber <= 0) {
+                    swal("Giá trị của trang phải lớn hơn 0!", { icon: "error", });
+                }
+                else if (pagenumber > totalpagesize) {
+                    swal("Bạn đã nhập quá số trang hiện có!", { icon: "error", });
+                }
+                else {
+                    loadData("", "", pagenumber);
+                }
+            } else {
+                swal("Bạn đã nhập sai định dạng số", { icon: "error", });
+            }
+
+        }
+    </script>
+    
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"991e98ba69ef49f69f29d1d3988962c9"}
+</script>
+<script type="text/javascript" src="./Danh sách người dùng - Báo cáo SYSMAN_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div><iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;" src="./Danh sách người dùng - Báo cáo SYSMAN_files/saved_resource.html"></iframe></body></html>

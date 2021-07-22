@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Xem chi tiết file";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    if (ViewBag.cks == 1)
+    {
+        Layout = null;
+    }
+    var linkdown = (string)TempData["linkdown"];
+    if (!string.IsNullOrEmpty(linkdown))
+    {
+        linkdown = linkdown.Replace("http://222.254.35.35", "");
+    }
+    var httpText = (string)ViewBag.httpText;
+    var type = !string.IsNullOrEmpty(linkdown) ? linkdown.Split('.').Last().ToLower() :"";
+    var lstImage = new[] { "jpg", "jpeg", "png" };
+    var namefile = !string.IsNullOrEmpty(linkdown) ? linkdown.Split(']').Last() : "";
+    var downfile = !string.IsNullOrEmpty(linkdown) ? linkdown.Split(']').Last().Split('/').Last():"";
+
+}
+@if (!string.IsNullOrEmpty(linkdown))
+{
+    <div class="tool fr">
+        <a href="@linkdown" download="@downfile" title="" class="btn btn-warning p5-7"><i class="fas fa-download"></i> Tải về</a>
+    </div>
+}
+@if (type == "pdf")
+{
+    <object data="@linkdown" type="application/pdf" style="width: 100%; height: 450px"><embed src="@linkdown" type="application/pdf" style="width: 100%; height: 450px" /></object>
+}
+else if (lstImage.Contains(type))
+{
+    <img src="@linkdown" width="100%" alt="" />
+}
+else
+{
+    var host = HttpContext.Current.Request.Url.Host;//localhost
+                                                    //var linkOnline = linkdown.Contains("http") ? linkdown : HttpContext.Current.Request.Url.Scheme + "://" + host + linkdown;
+                                                    //if (linkOnline.Contains("\\"))
+                                                    //{
+                                                    //    linkOnline = linkOnline.Replace("\\", "//");
+                                                    //}
+                                                    // + host + ":" + HttpContext.Current.Request.Url.Port
+                                                    //var linkOnline = !string.IsNullOrEmpty(linkdown) && linkdown.Contains("http") ? linkdown : HttpContext.Current.Request.Url.Scheme + "://" + linkdown;
+    var linkOnline = !string.IsNullOrEmpty(linkdown) && linkdown.Contains("http") ? linkdown : !string.IsNullOrEmpty(httpText)? httpText + linkdown : HttpContext.Current.Request.Url.Scheme + "://" + linkdown;
+    <iframe src="http://docs.google.com/gview?url=@linkOnline&embedded=true" frameborder="1" onselectstart="return false" oncontextmenu="return false" onload="noMenu()" width="100%" height="450"></iframe>
+}

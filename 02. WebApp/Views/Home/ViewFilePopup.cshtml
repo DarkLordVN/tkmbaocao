@@ -1,0 +1,22 @@
+﻿@{
+    var link = (string)ViewData["link"];
+
+}
+
+<div class="modal-dialog modal-lg mt-15">
+    <div class="modal-content">
+        <div class="modal-header pt10 pb10">
+            <h4 class="modal-title fwb fs22">Xem file đính kèm</h4>
+            <button type="button" class="close" id="close" data-dismiss="modal" title="Đóng">&times;</button>
+        </div>
+        <div class="modal-body pt10 pb10">
+            @if (!String.IsNullOrEmpty(link))
+            {
+                { Html.RenderAction("ViewFile", "Home", new { linkdown = link, cks = 1 }); }
+            }
+        </div>
+        <div class="modal-footer sticky_bottom pt10 pb10">
+            <a href="javascript://" data-dismiss="modal" class="btn btn-danger pull-right pt10 pb10" aria-hidden="true">Đóng</a>
+        </div>
+    </div>
+</div> 
