@@ -34,3 +34,12 @@ SELECT * FROM events where eventid IN (976781,962042);
 
 SELECT * FROM problem WHERE objectid = 16371;
 SELECT * FROM events WHERE objectid = 16371;
+
+
+----esf merge history table
+itemid < 31000
+itemid >= 31000 AND itemid < 32000
+itemid >= 32000 AND itemid < 33000
+itemid >= 33000 AND itemid < 34000
+itemid >= 34000 AND itemid < 35000
+itemid >= 35000 AND itemid < 36000
